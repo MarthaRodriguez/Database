@@ -1,0 +1,18 @@
+https://oracle-base.com/articles/11g/plsql-new-features-and-enhancements-11gr1#dynamic_sql_enhancements
+
+
+https://www.experts-exchange.com/questions/24617477/How-to-write-ref-cursor-query-in-Oracle-Reports.html
+1:CREATE OR REPLACE PROCEDURE PR_REF_CURSOR
+2:(p_sql   VARCHAR2,
+3: v_recs OUT SYS_REFCURSOR)
+4: 
+5: AS
+6: 
+7: BEGIN
+8: 
+9: --p_sql can be any valid sql statement
+10: OPEN v_recs FOR 
+11: p_sql;
+12: 
+13: 
+14: END PR_REF_CURSOR;
